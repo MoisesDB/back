@@ -72,6 +72,6 @@ app.put('/errands/:id', midVerifyId, midVerifyFields, (request: Request, respons
     })
 })
 
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
     console.log('servidor rodando')
 })
